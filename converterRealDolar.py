@@ -1,8 +1,8 @@
-""" Desafios - POO 04.07.2015
+# Desafios - POO 04.07.2015
 # 1 - Crie um programa que calcule valores reais em dolares;
 # 2 - Converta em pes a altura de uma pessoa;
 # 3 - Calcule a capacidade maxima de pessoas dentro de uma sala;
-"""
+
 ######################################################################
 # Aplicativo para converter valores de real para dólar               #
 # converterRealDolar.py - versão 0.1                                 #
@@ -10,7 +10,7 @@
 # Data : 04.07.2015                                                  #
 # Obs : USANDO CLASSE E METODO                                       #
 ######################################################################
-"""
+
 class CalculoReal(object):
 
     def converter(self):
@@ -19,15 +19,18 @@ class CalculoReal(object):
         valorr = float(raw_input('Qual valore em real que deseja converter para dolar ? '))
         total = valorr / valord
         print 'Seu valor em dólares fica: U$ %.2f' %total     #% mascara e 2f duas casas decimais.
+
+    def pesxaltura(self);
+        #falta criar o metodo
+
+    def capacixsala(self):
+        #falta criar o metodo
         
        
 p = CalculoReal()
 p.converter()
-"""        
-
-
-#!/usr/bin/python
-# -*- coding: iso-8859-1-*-
+        
+"""
 ######################################################################
 # Aplicativo para converter valores de real para dólar ou vice versa #
 # converterRealDolar.py - versão 0.1                                 #
@@ -42,10 +45,7 @@ import os
 while 1:
    os.system('clear')
    print ("Bem vindo ao converte!")
-   print ("Digite o numero da opcao desejada: \n",
-      "1- Converter de dólar para real \n",
-      "2- Converter de real para dolar \n",
-      "3- Sair")
+   print "Digite o numero da opcao desejada: \n","1- Converter de dólar para real \n",      "2- Converter de real para dolar \n",     "3- Sair"
    opcao = int(raw_input('Digite aqui: '))
    if opcao == 1:
       dolar = float(raw_input('Qual a cotação atual do dólar em reais? '))
@@ -63,5 +63,5 @@ while 1:
    if opcao == 3:
       print 'Encerrando.......'
       break
-
+"""
 
