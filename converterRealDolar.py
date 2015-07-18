@@ -25,8 +25,7 @@ class CalculoReal(object):
 
     def capacixsala(self):
         #falta criar o metodo
-        
-       
+               
 p = CalculoReal()
 p.converter()
         
