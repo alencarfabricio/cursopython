@@ -21,10 +21,10 @@ class CalculoReal(object):
         print 'Seu valor em dólares fica: U$ %.2f' %total     #% mascara e 2f duas casas decimais.
 
     def pesxaltura(self);
-        #falta criar o metodo
+        #falta criar o metodo ..
 
     def capacixsala(self):
-        #falta criar o metodo
+        #falta criar o metodo ..
                
 p = CalculoReal()
 p.converter()
