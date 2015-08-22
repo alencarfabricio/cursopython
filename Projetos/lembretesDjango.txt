@@ -1,0 +1,59 @@
+﻿#Aula Django - 01.08.2015
+
+#Criando um ambiente virtual onde irei trabalhar com o projeto chamado agenda, o nome do ambiente sera vagenda.
+$ virtualenv -p /usr/bin/python3.4 vagenda
+$ cd vagenda
+
+# Ativando meu projeto
+# Criei a pasta Projetos dentro de python_labs
+$ mkdir Projetos
+$ cd Projetos
+$ source bin/activate       e para desativar $ deactivate
+
+# Instalar o Django no meu virtualenv (Lembrar sempre de ativar antes)
+$ cd vagenda
+$ pip install Django 
+
+# Criar a estrutura do projeto chamado agenda
+$ django-admin startproject agenda .  #veja q ele criou um arquivo chamado manage.py
+$ cd agenda
+# Criar uma aplicacao chamada contatos no projeto agenda
+# esses dois pontos e pra voltar um diretorio, pois, esse arquivo manage.py esta no vagenda.
+$ python ../manage.py startapp contatos
+
+# Rodar o servidor (eh bom trabalhar c dois terminais aberto para nao precisa
+$ python ../manage.py runserver
+$ python manage.py migrate    # ele vai criar as tabelas
+
+# Acessa o sublime e abra o arquivo settings.py que fica na pasta agenda e comece a fazer as configuraçoes. 
+INSTALLED_APPS : Coloco o nome da minha aplicacao na ultima linha.
+LANGUAGE_CODE : Altero também para pt-br
+settings é o arquivo principal onde fica as configuracoes do django 
+agenda.contatos   (agenda = projeto  e contatos = aplicac
+- Depois que alterar o models.py tem que rodar o migration para criar a tabela no banco, é através dos atributos que eu digitei no models.py que será criada a tabela contatos e os campos nome, e-mail, telefone.
+$ ../manage.py makemigrations   # se posicionar no agenda.
+- Depois acesso o admin.py e registro a minha Classe Contatos.
+- Depois criar um usuario p/ o admin
+$ ../manage.py createsuperuser
+- instala o sqlite no firefox pra ficar manipulando os dados.
+Obs: sempre que eu alterar algo na tabela terei que rodar o makemigrations
+
+AGORA VAMOS PASSAR PRA PARTE DE ORGANIZAÇÃO(PASTAS), MUDAR A TELA DO DJANGO
+-Vamos criar uma nova aplicacao e chamar de : core
+../manage.py startapp core
+vou no sublime novamente e no settings eu coloco agenda.core igual coloquei para a aplicacao contatos.
+
+########## D I C A S ###################################
+- configurar o sublime para o python
+   https://packagecontrol.io/installation
+   BAIXA TB O SUBLIME3
+   www.sublime 
+    copia o codigo e cola dentro do sublime em views em showconsole
+    depois ctrl+shift+p e baixe os plugins:
+    Digite: installpackge e baixe:
+    anaconda,HTML5 INSTALAR, Djaneiro, 
+- tree (verifica os arquivos dentos de diretorios
+- ll (lista arquivos ocultos)
+- acessar o youtube e procurar os videos de guanabara (css, html, javascript)
+- Tirar as linhas do sublime – Preferences – package settings – anaconda crtl + f e procura linting e coloca false.
+
