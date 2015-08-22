@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-	<title>Agenda de Contato</title>
-    <meta charset="utf-8">
+	<title>Agenda de Contato em Django</title>
+	<meta charset="utf-8">
 </head>
 <body>
-     <h1>Bem vindo</h1>
+<h1>Bem vindo!</h1>
+<a href="{% url 'contato:addcontato' %}" title="">Cadastrar contato</a>
+<a href="{% url 'contato:listacontatos' %}" title="">Listar contato</a>
 </body>
 </html>
