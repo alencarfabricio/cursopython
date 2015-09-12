@@ -1,13 +1,11 @@
 ﻿#Aula Django - 01.08.2015
 
 #Criando um ambiente virtual onde irei trabalhar com o projeto chamado agenda, o nome do ambiente sera vagenda.
+
 $ virtualenv -p /usr/bin/python3.4 vagenda
 $ cd vagenda
 
 # Ativando meu projeto
-# Criei a pasta Projetos dentro de python_labs
-$ mkdir Projetos
-$ cd Projetos
 $ source bin/activate       e para desativar $ deactivate
 
 # Instalar o Django no meu virtualenv (Lembrar sempre de ativar antes)
@@ -29,7 +27,7 @@ $ python manage.py migrate    # ele vai criar as tabelas
 INSTALLED_APPS : Coloco o nome da minha aplicacao na ultima linha.
 LANGUAGE_CODE : Altero também para pt-br
 settings é o arquivo principal onde fica as configuracoes do django 
-agenda.contatos   (agenda = projeto  e contatos = aplicac
+agenda.contatos   (ag enda = projeto  e contatos = aplicac
 - Depois que alterar o models.py tem que rodar o migration para criar a tabela no banco, é através dos atributos que eu digitei no models.py que será criada a tabela contatos e os campos nome, e-mail, telefone.
 $ ../manage.py makemigrations   # se posicionar no agenda.
 - Depois acesso o admin.py e registro a minha Classe Contatos.
