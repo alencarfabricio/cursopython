@@ -38,7 +38,6 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'agenda.contatos',
-    'agenda.core',
 )
 
 MIDDLEWARE_CLASSES = (
